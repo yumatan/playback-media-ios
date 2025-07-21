@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D2C272552E2DFBA100ED4351 /* video-sample.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D2C272542E2DFBA100ED4351 /* video-sample.mp4 */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D2C272382E2DF33F00ED4351 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		D2C272272E2DF33D00ED4351 /* playback-media-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "playback-media-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C272372E2DF33F00ED4351 /* playback-media-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "playback-media-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C272412E2DF33F00ED4351 /* playback-media-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "playback-media-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C272542E2DFBA100ED4351 /* video-sample.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "video-sample.mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -79,6 +84,7 @@
 				D2C2723A2E2DF33F00ED4351 /* playback-media-iosTests */,
 				D2C272442E2DF33F00ED4351 /* playback-media-iosUITests */,
 				D2C272282E2DF33D00ED4351 /* Products */,
+				D2C272542E2DFBA100ED4351 /* video-sample.mp4 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2C272552E2DFBA100ED4351 /* video-sample.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

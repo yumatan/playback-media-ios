@@ -6,16 +6,28 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+    private var player: AVPlayer? {
+        guard let url = Bundle.main.url(forResource: "video-sample", withExtension: "mp4") else {
+            return nil
         }
-        .padding()
+        return AVPlayer(url: url)
+    }
+
+    var body: some View {
+        if let avPlayer = player {
+            VideoPlayer(player: avPlayer)
+                .onAppear {
+                    // Playback starts automatically when the screen appears.
+                    avPlayer.play()
+                }
+                .edgesIgnoringSafeArea(.all) // Full screen.
+        } else {
+            // Displays an error message if the URL is invalid.
+            Text("The video URL is invalid.")
+        }
     }
 }
 
